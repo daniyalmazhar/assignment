@@ -1,8 +1,8 @@
 import { DataTypes } from "sequelize";
 import sequelize from "../../db/config.js";
 
-const UserModel = sequelize.define(
-  "User",
+const StudentModel = sequelize.define(
+  "Student",
   {
     // Model attributes are defined here
     firstName: {
@@ -13,12 +13,7 @@ const UserModel = sequelize.define(
       type: DataTypes.STRING,
       // allowNull defaults to true
     },
-    email: {
-      type: DataTypes.STRING,
-      unique: true,
-      // allowNull defaults to true
-    },
-    password: {
+    phone: {
       type: DataTypes.STRING,
       // allowNull defaults to true
     },
@@ -28,4 +23,4 @@ const UserModel = sequelize.define(
   }
 );
 
-export default UserModel;
+export default StudentModel;

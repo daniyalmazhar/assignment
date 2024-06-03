@@ -1,5 +1,4 @@
-import { query } from "express";
-import { Op } from "sequelize";
+
 import userModel from "../../model/user/index.js";
 import { compare, hash } from "bcrypt";
 import jwt from "jsonwebtoken";
